@@ -14,7 +14,7 @@ Managing VM provisioning in Azure can be a complex task for administrators, bala
 - **Entra ID Authentication**: Secure user authentication for request submission.
 - **Custom VM Options**: Users can select VM size, operating system, name, and region.
 - **Azure SQL Database**: Stores each request with enabled Change Tracking.
-- **Azure Logic Apps Workflow**: Automates approval process and executes tasks based on approval status, including ARM Template Deployment.
+- **Azure Logic Apps Workflow**: Automates approval process and executes tasks based on approval status and provisioning status.
 - **Notification System**: Informs users about the approval status of their requests.
 
 ## Tools and Technologies
