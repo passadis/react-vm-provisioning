@@ -28,7 +28,7 @@ Managing VM provisioning in Azure can be a complex task for administrators, bala
 This Web App not only enhances administrative efficiency but also provides scalability to extend its capabilities to other resources and operational needs. Experience streamlined VM provisioning with our solution, tailored for Azure administrators and users.
 
 ## Instructions
-**Follow the Blog for Detailed Instructions**: For step-by-step guidance, visit [React Web App with Azure Container Apps, Azure SQL and Logic Apps approval flow](https://www.cloudblogger.eu/2023/12/11/custom-identity-database-with-azure-sql-and-web-apps](https://www.cloudblogger.eu/2024/01/14/azure-vm-auto-provisioning-web-app-with-logic-apps-approval-workflow/).
+**Follow the Blog for Detailed Instructions**: For step-by-step guidance, visit [React Web App with Azure Container Apps, Azure SQL and Logic Apps approval flow](https://www.cloudblogger.eu/2024/01/14/azure-vm-auto-provisioning-web-app-with-logic-apps-approval-workflow/).
 
 ## Contribution
 Contributions are welcome! If you have suggestions or improvements, feel free to fork the repository, make your changes, and submit a pull request.
