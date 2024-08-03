@@ -38,8 +38,8 @@ resource "azurerm_mssql_server" "sqlsrv" {
   administrator_login_password = var.sql_admin_password
 
   azuread_administrator {
-    login_username = "superdev@securevoip.eu"
-    object_id      = "34ac7c44-82ff-40f1-8e3c-b74524c198c5"
+    login_username = "xxxxxxx@xxxxxxxxxxxx.xx"
+    object_id      = "xxxxxxxxxxxxxxxxxxxxxxxxxxx"
   }
   public_network_access_enabled = true
 }
