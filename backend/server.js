@@ -3,6 +3,7 @@ const fetch = require('node-fetch');
 const { DefaultAzureCredential } = require('@azure/identity');
 const { SecretClient } = require('@azure/keyvault-secrets');
 const sql = require('mssql');
+const rateLimit = require('express-rate-limit');
 
 const osMapping = {
     "Windows 11": {
@@ -35,6 +36,11 @@ const app = express();
 const port = 3001;
 app.use(express.json());
 
+const provisionVmLimiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 100, // limit each IP to 100 requests per windowMs
+});
+
 // Azure Key Vault details
 const credential = new DefaultAzureCredential();
 const vaultName = process.env["KEY_VAULT_NAME"];
@@ -66,7 +72,7 @@ async function getSqlConfig() {
     };
 }
 
-app.post('/provision-vm', async (req, res) => {
+app.post('/provision-vm', provisionVmLimiter, async (req, res) => {
     try {
         const vmConfig = processVmConfig(req.body);
 
